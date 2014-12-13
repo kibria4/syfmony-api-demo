@@ -1,0 +1,11 @@
+#news:
+#    resource: "@NewsBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+
+#rest route
+articles:
+    type: rest
+    resource: API\NewsBundle\Controller\ArticlesController
+    defaults: { _format: json }
+    prefix: /api/
